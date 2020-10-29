@@ -10,44 +10,46 @@
 }
 
 .site-nav,
-.site-nav-list {
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+.site-nav {
   background-color: getColor('primary-white');
   list-style: none;
   display: flex;
   text-align: center;
   align-items: center;
-}
-.site-nav-list {
-}
-.site-nav .item + .item {
-  margin-left: 50px;
-}
-.site-nav .item {
-  display: flex;
-  align-items: center;
-}
-.site-nav .link {
-  text-align: center;
-  display: block;
-  color: getColor('primary');
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  padding-bottom: 32px;
-  padding-top: 32px;
-  position: relative;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:active {
-    opacity: 1;
+  .link {
+    text-align: center;
+    display: block;
+    color: getColor('primary');
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    position: relative;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:active {
+      opacity: 1;
+    }
+    &:hover,
+    &:focus {
+      color: getColor('accent');
+    }
   }
-  &:hover,
-  &:focus {
-    color: getColor('accent');
+  .item {
+    display: flex;
+    align-items: center;
+  }
+  .site-nav-list {
+    @extend .site-nav;
   }
 }
 .link.current-page {
@@ -72,7 +74,7 @@
   align-items: center;
   margin-left: auto;
 }
-.cont-nav .cont-nav-link {
+.cont-nav .link {
   display: flex;
   text-decoration: none;
   font-family: Roboto;
@@ -101,7 +103,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  .cont-nav-link:hover & {
+  .link:hover & {
     fill: getColor('accent');
   }
 }
