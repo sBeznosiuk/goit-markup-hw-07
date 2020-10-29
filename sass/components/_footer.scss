@@ -2,34 +2,37 @@
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-.foot-list {
-  list-style: none;
-  padding-left: 0;
-  max-width: 231px;
-}
-.footer .link {
-  font-family: Roboto;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer .address {
-  color: rgba(255, 255, 255, 1);
-  font-family: Roboto;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-.footer .logo {
-  color: #fff;
-  margin-bottom: 20px;
-}
-.foot-logo-item {
-  margin-bottom: 20px;
+
+  .foot-list {
+    list-style: none;
+    padding-left: 0;
+    max-width: 231px;
+  }
+
+  .link {
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .address {
+    color: rgba(255, 255, 255, 1);
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  .logo {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .foot-logo-item {
+    margin-bottom: 20px;
+  }
 }
 .footer .item:not(:last-child) {
   margin-bottom: 9px;

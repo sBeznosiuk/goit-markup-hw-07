@@ -1,14 +1,15 @@
 .examples {
   padding-top: 94px;
   padding-bottom: 94px;
+  &-list {
+    display: flex;
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+    width: calc((100% - 60px) / 3);
+  }
 }
-.examples-list {
-  display: flex;
-  list-style: none;
-  margin-top: 0;
-  padding-left: 0;
-  width: calc((100% - 60px) / 3);
-}
+
 .ex-image {
   display: block;
   z-index: -1;
@@ -36,14 +37,15 @@
   background-color: rgba(47, 48, 58, 0.8);
 
   z-index: -1;
-}
-.image-text {
-  color: #fff;
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+
+  .image-text {
+    color: #fff;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
 }

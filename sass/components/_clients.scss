@@ -1,14 +1,16 @@
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  &-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-right: 215px;
+    padding-left: 215px;
+  }
 }
-.clients-list {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding-right: 215px;
-  padding-left: 215px;
-}
+
 .clients-item {
   display: flex;
 
